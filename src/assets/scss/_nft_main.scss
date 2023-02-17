@@ -178,7 +178,7 @@
     position: relative;
     width: 100%;
     min-width: 1920px;
-    height: 980px;
+    height: 1000px;
     // margin-top: -200px;
     // margin-bottom: -200px;
   }
@@ -312,99 +312,9 @@
 //===== cont05 =====//
 .sect-cont05 {
   background-color: #ebf565;
+  height: 300px;
   .sect-container {
     width: 100%;
-  }
-}
-
-.cont05-content {
-  position: relative;
-  height: 900px;
-  // .cont05-wrap {
-  //   position: relative;
-  //   height: 100%;
-  // }
-  .bg-area {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba($color: #000, $alpha: 1) 0 30%, rgba($color: #000000, $alpha: 0.1));
-    background-position: center center;
-    background-size: cover;
-  }
-  .bg-area02 {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    // background: url("/img/main/bg_cube02.png") no-repeat;
-    // background-position: center center;
-    // background-size: cover;
-    .img-area {
-      width: 700px;
-      margin: 0 auto;
-      margin-top: 180px;
-      // box-shadow: 0px 10px 4px 1px #000000;
-
-      animation-name: moveUpDown;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      // animation-fill-mode: both;
-      img {
-        width: 100%;
-        // filter: drop-shadow(0px 10px 4px rgba($color: #fff, $alpha: 0.5));
-      }
-    }
-  }
-
-  .text-area {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    .text-box {
-      width: 1009%;
-      // height: 240px;
-      // background-color: rgba($color: #000000, $alpha: 0.8);
-      // backdrop-filter: blur(12px);
-    }
-    p {
-      color: #fff;
-      font-size: 80px;
-      line-height: 1.4;
-    }
-  }
-}
-
-.cont05-bg-video-area {
-  position: absolute;
-  overflow: hidden;
-  // min-width: 2400px;
-  width: 100%;
-  bottom: 0;
-  // height: 800px;
-  .video-crop-area {
-    position: relative;
-    width: 100%;
-    height: 820px;
-    // margin-top: -8%;
-    // margin-bottom: -168px;
-
-    // transform: translateY(28%);
-  }
-  .bg-video {
-    position: relative;
-    width: 100%;
-    top: 100%;
-    transform: translateY(-68%);
-    display: block;
-    margin: 0 auto;
   }
 }
 
@@ -545,11 +455,10 @@
     }
   }
 }
-
 .sty-ul03 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 120px 10px;
+  gap: 100px 10px;
   justify-items: center;
   position: relative;
   // $circleSize: 300px;
@@ -560,37 +469,19 @@
     // justify-content: center;
     width: 340px;
     height: 340px;
-    // overflow: hidden;
+    overflow: hidden;
     border-radius: 50%;
     // box-shadow: 0px 0px 40px 8px rgba($color: #d597ff, $alpha: 0.3), 0px 0px 12px 1px rgba($color: #9f22c5, $alpha: 0.5);
     // transform: scale(%);
-    transition: all 0.6s;
 
-    &::after {
-      content: "";
-      z-index: -1;
-      position: absolute;
-      top: 260px;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      width: 70%;
-      height: 70%;
-      transform: perspective(1000px) rotateX(84deg);
-      border-radius: 50%;
-      background-color: rgba($color: #4a3b64, $alpha: 0.5);
-      filter: blur(50px);
-      transition: all 0.6s;
-      // box-shadow: 0px 0px 40px 8px rgba($color: #d597ff, $alpha: 0.8);
-    }
-
+    transition: all 0.4s;
     .bg-circle-area {
       position: relative;
       width: 100%;
       height: 100%;
       border-radius: 50%;
       background-color: rgba($color: #fff, $alpha: 0.4);
-      border: 8px solid rgba($color: #c6c4ff, $alpha: 0.5);
+      border: 6px solid #c6c4ff;
       border-top-color: #8558d8;
       backdrop-filter: blur(8px);
     }
@@ -606,16 +497,13 @@
       // background-color: #dd8078;
     }
     &:hover {
-      transform: scale(112%);
-      &::after {
-        background-color: rgba($color: #aa55ad, $alpha: 0.5);
-        transform: perspective(1000px) rotateX(84deg) scaleX(60%);
-      }
+      transform: scale(120%);
+
       .bg-circle-area {
         background-color: rgba($color: #fff, $alpha: 0.6);
-        border-width: 14px;
+
         animation-name: circleMove;
-        animation-duration: 0.6s;
+        animation-duration: 0.8s;
         animation-iteration-count: 1;
         animation-fill-mode: both;
       }
@@ -629,23 +517,5 @@
   }
   100% {
     transform: rotate(540deg);
-    border-color: #ffe6f7;
-    border-top-color: #ff5ec9;
-  }
-}
-
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(5%);
-    filter: drop-shadow(0px 4px 10px rgba($color: #58bcff, $alpha: 0.5));
-  }
-  50% {
-    transform: translateY(-5%) scale(1.1);
-    filter: drop-shadow(0px 0px 22px rgba($color: #fc456d, $alpha: 0.7));
-  }
-
-  100% {
-    transform: translateY(5%);
-    filter: drop-shadow(0px 4px 10px rgba($color: #58bcff, $alpha: 0.5));
   }
 }
