@@ -6,25 +6,91 @@ block content
   main(class="wrap-container page-main") 
     section(class="sect sect-main-intro")
       .sect-container
-        .main-intro-content
-          .main-intro-wrap
-            .main-into-bg-video-area
+        .sect-bg-area.main-intro-bg
+          .bg-video-area.bg-img-area
+            .video-area.video01
               .video-crop-area
-                video(id="target-play-video" class="bg-video" autoplay muted loop)
+                video(class="bg-video" autoplay muted loop)
                   source(src="http://hauto.kr/static/video/bg_car.mp4" type="video/mp4")
+            
+            .bg-img-box.bg-img01
 
-            //- video(id="target-play-video01" class="bg-video" muted controls)
-            //-   source(src="http://hauto.kr/static/video/bg_degital.mp4" type="video/mp4")
-            //- video(id="target-play-video02" class="bg-video" muted controls)
-            //-   source(src="http://hauto.kr/static/video/bg_degital.mp4" type="video/mp4") 
-          .main-intro-bg-area
+            .video-area.video02
+              .video-crop-area
+                video(class="bg-video" autoplay muted loop)
+                  source(src="http://hauto.kr/static/video/bg_neon02.mp4" type="video/mp4")
+            .video-area.video03
+              .video-crop-area
+                video(class="bg-video" autoplay muted loop)
+                  source(src="http://hauto.kr/static/video/bg_neon02.mp4" type="video/mp4")
+
+          //- .bg-img-area
+          //-   .bg-img-box.bg-img01
+              
+        .sect-content.main-intro-content
           .main-intro-text-area
             .title-main
-              p 마이카 NFT
-              p 당신의 자동차를 NFT화 시키세요!~
+              p MY CAR NFT
+              p NFT기술과 자동차와 만남
             .title-sub
-              p NFT가 여러분을 찾아갑니다.
-              p 여러분의 자동차 가치를 올리세요
+              p MY CAR NFT가 여러분을 찾아갑니다.
+              p 자동차에 NFT기술을 접목하여 새로운 가치를 창출하여
+              p 여러분의 자동차의 가치를 올려보세요!
+            .btn-area
+              a.btn-connected Get Connected
+
+          
+
+    section(class="sect sect-main-advantages")
+      .sect-container
+        .sect-content.main-advantages-content
+          .title-area 
+            h3.title-main 마이카 NFT 특장점!
+            p.title-sub 자동차의 가치를 올려줄 마이카 NFT플랫폼의 특장점을 소개합니다.
+          ul.main-advantages-ul
+            li 
+              p 제목1
+              p 내용
+            li 
+              p 제목2
+              p 내용
+            li 
+              p 제목
+              p 내용
+            li 
+              p 제목
+              p 내용
+
+
+              
+    section(class="sect sect-main-benefits")
+      .sect-container
+        .main-benefit-content 
+          .text-area
+            
+    
+    section(class="sect sect-main-join-request")
+      .sect-container
+        .sect-content.main-join-request-content 
+          .text-area
+            img(src="", alt="이미지")
+            p 지금 신청하세요!!
+    
+    section(class="sect sect-main-last")
+      .sect-container
+        .sect-bg-area.main-last-bg
+          .bg-video-area.bg-img-area
+            .video-area.video01
+              .video-crop-area
+                video(id="target-play-video" class="bg-video" autoplay muted loop)
+                  source(src="http://hauto.kr/static/video/bg_aurora.mp4" type="video/mp4")
+              .img-box.bg-img01
+        .sect-content.main-last-content 
+          .text-area
+            p 테스트
+
+
+
 
   script(src=`${basePath}/static/js/main_video_autoplay.js`)
 

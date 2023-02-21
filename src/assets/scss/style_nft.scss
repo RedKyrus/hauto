@@ -10,7 +10,7 @@
   // font-family: 'NanumSquareAc', sans-serif; //기본굵기 400
   font-weight: 500;
   //일반공식(pohto_va*base_font_size/1000)
-  letter-spacing: -0.075em;
+  letter-spacing: -0.035em;
   line-height: 1;
 }
 // a{
@@ -35,6 +35,6 @@ body {
 }
 
 @import "_header";
-@import "_footer";
+@import "_nft_footer";
 @import "_nft_main";
 // @import "_nft_main_m";

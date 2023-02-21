@@ -24,7 +24,7 @@
   text-align: center;
 
   .sect-container {
-    width: $baseSectWithSize;
+    width: $baseSectWidthSize;
     margin: 0 auto;
   }
 }
@@ -157,7 +157,7 @@
     top: 0;
     left: 0;
     right: 0;
-    max-width: $baseSectWithSize;
+    max-width: $baseSectWidthSize;
     width: 100%;
     margin: 0 auto;
     p {
@@ -636,16 +636,16 @@
 
 @keyframes moveUpDown {
   0% {
-    transform: translateY(5%);
+    transform: translateY(10%);
     filter: drop-shadow(0px 4px 10px rgba($color: #58bcff, $alpha: 0.5));
   }
   50% {
-    transform: translateY(-5%) scale(1.1);
+    transform: translateY(-10%) scale(1.2);
     filter: drop-shadow(0px 0px 22px rgba($color: #fc456d, $alpha: 0.7));
   }
 
   100% {
-    transform: translateY(5%);
+    transform: translateY(10%);
     filter: drop-shadow(0px 4px 10px rgba($color: #58bcff, $alpha: 0.5));
   }
 }

@@ -1,6 +1,9 @@
 .header {
   width: 100%;
   background-color: #fff;
+  position: relative;
+  box-shadow: 0 10px 12px 0 rgba($color: #000, $alpha: 0.35);
+  z-index: 1;
   .header-container {
     width: 100%;
     display: flex;
